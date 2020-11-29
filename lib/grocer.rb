@@ -18,9 +18,10 @@ def consolidate_cart(cart)
       item[:count] = count
     end
     if item[:item]
-      count += 1
-      item[:count] = count
-      receipt << cart
+      item[:count] += 1
+    end
+    if item[:count] > 0
+      receipt << item
       binding.pry
     end
   end
