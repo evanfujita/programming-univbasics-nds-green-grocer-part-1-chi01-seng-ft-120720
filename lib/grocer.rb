@@ -5,11 +5,11 @@ def find_item_by_name_in_collection(name, collection)
   collection.each do |item|
     item.each do |detail|
       if detail == name
-        cart << item
+        cart << item   
         binding.pry
+      end
     end
   end
-    end
     cart
 end
 
