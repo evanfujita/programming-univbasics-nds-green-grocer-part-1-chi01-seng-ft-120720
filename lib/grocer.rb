@@ -1,15 +1,15 @@
 require 'pry'
 
 def find_item_by_name_in_collection(name, collection)
-  count = 0
+  cart = Array.new
   collection.each do |item|
     item.each do |details|
       if details = name
-        puts name
+        cart << details
     end
   end
     end
-binding.pry
+    cart
 end
 
 def consolidate_cart(cart)
