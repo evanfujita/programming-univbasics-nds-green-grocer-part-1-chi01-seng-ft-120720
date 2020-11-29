@@ -22,7 +22,7 @@ def consolidate_cart(cart)
     end
     if item[:count] > 0
       receipt << item
-      binding.pry
+      #binding.pry
     end
   end
  receipt
