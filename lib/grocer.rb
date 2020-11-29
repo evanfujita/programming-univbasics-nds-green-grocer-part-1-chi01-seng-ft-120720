@@ -7,7 +7,7 @@ def find_item_by_name_in_collection(name, collection)
         cart = item 
       elsif 
         item[:item].any? != name
-        nil
+        cart = nil
     end
   end
     cart
