@@ -5,7 +5,7 @@ def find_item_by_name_in_collection(name, collection)
   collection.each do |item|
     item.each do |details|
       if details = name
-        cart << details
+        cart << item
     end
   end
     end
