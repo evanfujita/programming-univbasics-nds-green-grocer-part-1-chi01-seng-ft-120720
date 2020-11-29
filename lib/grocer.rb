@@ -14,8 +14,9 @@ def consolidate_cart(cart)
  receipt = Array.new
   cart.each do |item|
     count = 0
-    if
-      item
+    if !item[:count]
+      item[:count] = count
+      receipt << cart
       binding.pry
     end
   end
