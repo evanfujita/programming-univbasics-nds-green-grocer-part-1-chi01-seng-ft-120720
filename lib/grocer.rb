@@ -3,8 +3,9 @@ require 'pry'
 def find_item_by_name_in_collection(name, collection)
   cart = Array.new
   collection.each do |item|
-    item.each do |details|
-      if details = name
+    item.each do |detail|
+      if detail == name
+        cart << item
         binding.pry
     end
   end
